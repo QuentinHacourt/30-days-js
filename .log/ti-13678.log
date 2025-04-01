@@ -1,0 +1,35 @@
+[11:04:42.121] Global cache location '/home/quentin/.cache/typescript/4.5', safe file path '/usr/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/lib/node_modules/typescript/lib/typesMap.json
+[11:04:42.122] Processing cache location '/home/quentin/.cache/typescript/4.5'
+[11:04:42.122] Trying to find '/home/quentin/.cache/typescript/4.5/package.json'...
+[11:04:42.123] Loaded content of '/home/quentin/.cache/typescript/4.5/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.714"}}
+[11:04:42.123] Loaded content of '/home/quentin/.cache/typescript/4.5/package-lock.json'
+[11:04:42.123] Finished processing cache location '/home/quentin/.cache/typescript/4.5'
+[11:04:42.124] Process id: 13700
+[11:04:42.124] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[11:04:42.124] validateDefaultNpmLocation: false
+[11:04:42.124] Npm config file: /home/quentin/.cache/typescript/4.5/package.json
+[11:04:42.124] Updating types-registry npm package...
+[11:04:42.124] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[11:04:43.972]     Succeeded. stdout:
+    
+    up to date, audited 2 packages in 2s
+
+found 0 vulnerabilities
+
+[11:04:43.972] Updated types-registry npm package
+[11:04:46.006] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2016.d.ts","/usr/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/usr/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/quentin/Development/javascript/30-days-js/27.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/quentin/Development/javascript/30-days-js","kind":"discover"}
+[11:04:46.035] Loaded safelist from types map file '/usr/lib/node_modules/typescript/lib/typesMap.json'
+[11:04:46.036] Explicitly included types: []
+[11:04:46.037] Inferred typings from unresolved imports: []
+[11:04:46.037] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/quentin/Development/javascript/30-days-js/bower_components","/home/quentin/Development/javascript/30-days-js/node_modules"]}
+[11:04:46.038] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/quentin/Development/javascript/30-days-js/bower_components","/home/quentin/Development/javascript/30-days-js/node_modules"]}
+[11:04:46.038] DirectoryWatcher:: Added:: WatchInfo: /home/quentin/Development/javascript/30-days-js/bower_components
+[11:04:46.039] DirectoryWatcher:: Added:: WatchInfo: /home/quentin/Development/javascript/30-days-js/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:04:46.042] Elapsed:: 2.5750170000001162ms DirectoryWatcher:: Added:: WatchInfo: /home/quentin/Development/javascript/30-days-js/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:04:46.042] DirectoryWatcher:: Added:: WatchInfo: /home/quentin/Development/javascript/30-days-js/node_modules
+[11:04:46.042] DirectoryWatcher:: Added:: WatchInfo: /home/quentin/Development/javascript/30-days-js/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:04:46.042] Elapsed:: 0.22497400000065682ms DirectoryWatcher:: Added:: WatchInfo: /home/quentin/Development/javascript/30-days-js/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:04:46.043] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[11:04:46.043] Response has been sent.
+[11:04:46.043] No new typings were requested as a result of typings discovery
