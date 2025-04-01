@@ -10,19 +10,19 @@ var compactObject = function(obj) {
 };
 
 const filterArr = (array) => {
-    let res = [];
+  let res = [];
 
-    array.forEach((elem) => {
-      if (Array.isArray(elem)){
-        res.push(filterArr(elem));
-      } else if (Boolean(elem) !== false) {
-        res.push(elem);
-      } else if (typeof elem === "object") {
-        res.push(filterObj(elem));
-      }
-    });
+  array.forEach((elem) => {
+    if (Array.isArray(elem)) {
+      res.push(filterArr(elem));
+    } else if (typeof elem === "object" && Boolean(elem)) {
+      res.push(filterObj(elem));
+    } else if (Boolean(elem)) {
+      res.push(elem);
+    }
+  });
 
-    return res;
+  return res;
 }
 
 const filterObj = (obj) => {
@@ -31,10 +31,10 @@ const filterObj = (obj) => {
   for (const [key, value] of Object.entries(obj)) {
     if (Array.isArray(value)) {
       res[key] = filterArr(value);
-    } else if (Boolean(value) !== false){
-      res[key] = value;
-    } else if (typeof value === "object") {
+    } else if (typeof value === "object" && Boolean(value)) {
       res[key] = filterObj(value);
+    } else if (Boolean(value)) {
+      res[key] = value;
     }
   }
 
